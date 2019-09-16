@@ -118,3 +118,7 @@ let myVar: number | string = 'ass';
 myVar = 5;
 console.log(myVar); // 5
 ```
+
+## 下一章——对象
+
+[下一章](../two/README.md)
