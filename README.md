@@ -12,12 +12,16 @@
 
 + VS Code
 + VS Code插件——Quokka.js(很强大的插件)
++ [在线运行](http://www.typescriptlang.org/play/)
 
 ## 学习章节
 
 + [第一章-基本类型](/one/README.md)
-+ [第二章-对象](/two/README.md)
++ [第二章-对象(函数、数组、狭义的对象)](/two/README.md)
++ [第三章-其他对象](/three/README.md)
++ [第四章-元组](/four/README.md)
 
 ## 参考地址
 
 + [TypeScript入门教程](https://ts.xcatliu.com/)
++ [HOWToDoInJava的TypeScript教程](https://howtodoinjava.com/typescript/)
