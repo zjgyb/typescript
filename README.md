@@ -20,6 +20,10 @@
 + [第二章-对象(函数、数组、狭义的对象)](/two/README.md)
 + [第三章-其他对象](/three/README.md)
 + [第四章-元组](/four/README.md)
++ [第五章-枚举](/five/README.md)
++ [第六章-类](/six/README.md)
++ [第七章-类与接口](/seven/README.md)
++ [第八章-泛型](/eight/README.md)
 
 ## 参考地址
 
