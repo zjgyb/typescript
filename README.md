@@ -25,6 +25,10 @@
 + [第七章-类与接口](/seven/README.md)
 + [第八章-泛型](/eight/README.md)
 
+## 总结
+
+TS学习暂时告一段落，如果用到的时候缺少的将会补充。
+
 ## 参考地址
 
 + [TypeScript入门教程](https://ts.xcatliu.com/)
