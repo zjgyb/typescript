@@ -65,7 +65,7 @@ const tony: Person = {
 
 ```ts
 interface Person {
-  name: String;
+  name: String,
   age: any
 }
 
@@ -84,7 +84,7 @@ console.log(tony);
 
 ```ts
 interface Person {
-  name: String;
+  name: String,
   age: any,
   [propName: string]: any
 }
@@ -94,6 +94,27 @@ const tony: Person = {
   age: '23',
   'addd': 'a',
   123: 'd'
+}
+```
+
+也可以通过其他变量赋值的方式比较多余值的校验
+
+
+```ts
+interface Person {
+  name: String,
+  age: any
+}
+
+const tom = {
+  name: 'tony',
+  age: '23',
+  'addd': 'a',
+  123: 'd'
+}
+
+const tony: Person = {
+  ...tom
 }
 ```
 
@@ -200,6 +221,7 @@ tony.id = 4;
 
 ```ts
 let names: string[] = ['Tony', 'Tom', 'David'];
+let numAndStr: (string | number)[] = [1, '2'];
 
 // 报错
 names.push(3);
@@ -246,6 +268,12 @@ sum(1, 2);
 
 ```ts
 let sum = function(x: number, y: number): number {
+  return x + y;
+}
+
+// 还可以
+type sumFn = (num1: number, num2: number) => number
+let sum: sumFn = function(x, y) {
   return x + y;
 }
 ```

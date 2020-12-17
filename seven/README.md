@@ -89,8 +89,6 @@ class Bird implements FlyAndMakeSound {
 
 ### 接口继承类
 
-暂时没想到好的方式，因为我认为一般不会用到，下面是我抄袭教程的例子
-
 ```ts
 class Point {
     x: number;

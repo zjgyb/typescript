@@ -25,6 +25,18 @@ let bool: boolean = true;
 console.log(bool); // true
 ```
 
+### Number类型的其他进制
+
+number还支持二进制、八进制和十六进制
+
+```ts
+let num:number = 123;
+
+num = 0b110; // 二进制
+num = 0o173; // 八进制
+num = 0x7b; // 十六进制
+```
+
 ### 注意点
 
 1. 一旦声明了变量类型，之后改变数据类型就会报错：例如
@@ -98,6 +110,8 @@ let myVar2 = undefined;
 myVar2 = 'hi';
 myVar2 = 5;
 console.log(myVar2); // 5
+
+let myVar3: any[] = [1, 'a'];
 ```
 
 ### 类型推论
@@ -117,6 +131,31 @@ myVar = 'ann'; // 报错
 let myVar: number | string = 'ass';
 myVar = 5;
 console.log(myVar); // 5
+```
+
+### never类型
+
+报错类型没有返回值，死循环
+
+```ts
+let errorFunc = (message: string): never => {
+  throw new Error(message);
+}
+```
+
+### 类型断言
+
+1. (<type>variable)
+2. (variable as type)
+
+```ts
+let test = (target: string | number): number => {
+  if ((<string>target).length || (target as string).length === 0) {
+    return (target as string).length;
+  }
+
+  return target.toString().length;
+}
 ```
 
 ## 下一章——对象

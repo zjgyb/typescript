@@ -2,7 +2,7 @@
 
 ### 概念
 
-[抄袭来源](https://ts.xcatliu.com/advanced/class)
+[来源](https://ts.xcatliu.com/advanced/class)
 
 + 类(Class): 定义了一件事物的抽象特点，包含它的属性和方法
 + 对象(Object): 类的实例，通过`new`生成
@@ -24,13 +24,13 @@ TS中有三种修饰符，分别是`public`、`private`、`protected`
 
 ```ts
 class People {
-  public name;
-  private thinking = true;
-  protected weight = 65;
+  public name: string;
+  private thinking: boolean = true;
+  protected weight: number = 65;
   constructor(name) {
     this.name = name;
   }
-  diff() {
+  public diff() {
     return this.thinking;
   }
 }
@@ -40,11 +40,11 @@ class Tony extends People {
     super(name);
   }
 
-  say() {
+  public say() {
     return this.weight;
   }
 
-  getThinking() {
+  public getThinking() {
     return this.thinking; // 报错
   }
 }
@@ -59,7 +59,7 @@ let b = new Tony('tony');
 console.log(b.say()); // 65
 ```
 
-### readonly
+### readonly 只读属性
 
 ```ts
 class People {
